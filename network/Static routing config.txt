@@ -1,0 +1,29 @@
+ router > "This is called as Privilage made"
+
+than go to "Enable" mode for start configuration in router.
+Router> enable
+in Enable mode we only show configuration 
+
+than go to confguration terminal
+Router#configuration terminal
+Router(config)#
+
+for set IP address go to Interface Mode					Interface Mode :- 	Se :- Serial
+Router(config)#interface Se 2/0							Fa :- Fastethernet
+Router(config-if)#									gig :- Gigabyte Ethernet
+
+assign Ip address to interface (serial,fastethernet,gigabyte ethernet)
+Router(config-if)#ip address 192.168.10.1 255.255.255.0
+
+for save ip address 
+Router(config-if)#no shutdown
+
+*STATIC ROUTING configuration command's
+first check all router configuration 
+
+for show all configuration go to enable mode
+Router# show ip route
+
+Than go to configur Mode
+Router(config)#
+Router(config)#ip route "add network IP address" "Subnet Mask" "Exit port Ip address"	(in both side)

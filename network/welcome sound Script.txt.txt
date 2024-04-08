@@ -1,0 +1,4 @@
+Dim speaks, spech
+speaks="Hello Jaymin"
+set speech=createObject("sapi.spvoice")
+speech.speak speaks

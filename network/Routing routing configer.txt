@@ -1,0 +1,30 @@
+ router > "This is called as Privilage made"
+
+than go to "Enable" mode for start configuration in router.
+Router> enable
+in Enable mode we only show configuration 
+
+than go to confguration terminal
+Router#configuration terminal
+Router(config)#
+
+for set IP address go to Interface Mode					Interface Mode :- 	Se :- Serial
+Router(config)#interface Se 2/0							Fa :- Fastethernet
+Router(config-if)#									gig :- Gigabyte Ethernet
+
+Assign Ip address to interface (serial,fastethernet,gigabyte ethernet)
+Router(config-if)#ip address 192.168.10.1 255.255.255.0
+
+for save ip address 
+Router(config-if)#no shutdown
+
+*"RIP" ROUTING configuration command's
+first check all router configuration 
+
+for show all configuration go to enable mode
+Router# show ip route
+
+Than go to configur Mode
+Router(config)#
+Router(config)#router rip
+Router(config-route)#network "update his own network"	(in both side)
